@@ -68,3 +68,10 @@ Given a non-empty string and an int n, return a new string where the char at ind
 """
 def missing_char(str, n):
     return str[:n] + str[n+1:]
+
+
+"""
+Given a string, return a new string where the first and last chars have been exchanged.
+"""
+def front_back(str):
+    return str if len(str) < 2 else str[-1] + str[1:len(str)-1] + str[0]
