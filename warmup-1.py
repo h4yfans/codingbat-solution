@@ -61,3 +61,10 @@ Given a string, return a new string where "not " has been added to the front. Ho
 def not_string(str):
     return str if str.startswith('not ') else "not " + str
     #return str if str[:3] == 'not' else "not " + str
+
+
+"""
+Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..len(str)-1 inclusive).
+"""
+def missing_char(str, n):
+    return str[:n] + str[n+1:]
