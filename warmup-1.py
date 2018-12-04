@@ -46,3 +46,10 @@ Given an int n, return True if it is within 10 of 100 or 200. Note: abs(num) com
 """
 def near_hundred(n):
     return abs(100-n) <= 10 or abs(200-n) <= 10
+
+
+"""
+Given 2 int values, return True if one is negative and one is positive. Except if the parameter "negative" is True, then return True only if both are negative.
+"""
+def pos_neg(a, b, negative):
+    return (a < 0) ^ (b < 0) if not negative else (a < 0) and (b <0)
