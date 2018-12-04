@@ -18,3 +18,15 @@ Given a string, return a new string made of every other char starting with the f
 """
 def string_bits(str):
     return str[::2]
+
+
+"""
+Given a non-empty string like "Code" return a string like "CCoCodCode".
+"""
+def string_splosion(str):
+    result = ""
+    for k, s in enumerate(str):
+         result += str[:k+1]
+    return result
+
+
