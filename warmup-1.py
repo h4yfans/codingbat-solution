@@ -32,3 +32,10 @@ We have a loud talking parrot. The "hour" parameter is the current hour time in 
 def parrot_trouble(talking, hour):
     return talking and (hour < 7 or hour > 20)
     #return talking and hour not in (7,21)
+
+
+"""
+Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.
+"""
+def makes10(a, b):
+    return (a==10 or b==10) or (a+b == 10)
