@@ -41,3 +41,11 @@ def last2(str):
         if str[i:i+2] == str[-2:]:
             count += 1
     return count
+
+
+"""
+Given an array of ints, return the number of 9's in the array.
+"""
+def array_count9(nums):
+    return nums.count(9)
+
