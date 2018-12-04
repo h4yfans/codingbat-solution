@@ -16,7 +16,7 @@ def monkey_trouble(a_smile, b_smile):
 Given two int values, return their sum. Unless the two values are the same, then return double their sum.
 """
 def sum_double(a, b):
-    return sum(a,b) if a==b else sum(a,b)*2
+    return a+b if a != b else (a+b)*2
 
 
 """
@@ -59,8 +59,8 @@ def pos_neg(a, b, negative):
 Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
 """
 def not_string(str):
-    return str if str.startswith('not ') else "not " + str
-    #return str if str[:3] == 'not' else "not " + str
+    return str if str[:3] == 'not' else "not " + str
+
 
 
 """
