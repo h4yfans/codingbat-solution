@@ -11,3 +11,10 @@ or whatever is there if the string is less than length 3. Return n copies of the
 """
 def front_times(str, n):
     return str[:3]*n
+
+
+"""
+Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
+"""
+def string_bits(str):
+    return str[::2]
