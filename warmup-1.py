@@ -53,3 +53,11 @@ Given 2 int values, return True if one is negative and one is positive. Except i
 """
 def pos_neg(a, b, negative):
     return (a < 0) ^ (b < 0) if not negative else (a < 0) and (b <0)
+
+
+"""
+Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
+"""
+def not_string(str):
+    return str if str.startswith('not ') else "not " + str
+    #return str if str[:3] == 'not' else "not " + str
