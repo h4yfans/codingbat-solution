@@ -13,3 +13,10 @@ Return the number of times that the string "hi" appears anywhere in the given st
 """
 def count_hi(str):
     return str.count('hi')
+
+
+"""
+Return True if the string "cat" and "dog" appear the same number of times in the given string.
+"""
+def cat_dog(str):
+    return str.count('cat') == str.count('dog')
