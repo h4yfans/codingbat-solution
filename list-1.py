@@ -12,3 +12,11 @@ and the first element and the last element are equal.
 """
 def same_first_last(nums):
     return len(nums) > 0 and nums[0] == nums[-1]
+
+
+"""
+Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
+"""
+def make_pi():
+    return [3,1,4]
+
