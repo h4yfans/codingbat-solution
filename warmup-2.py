@@ -56,3 +56,27 @@ Given an array of ints, return True if one of the first 4 elements in
 """
 def array_front9(nums):
     return 9 in nums[:4]
+
+
+"""
+Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+"""
+def array123(nums):
+    return set(nums) == set([1, 2, 3])
+    #Tip: Set does not contain duplicate values
+
+
+"""
+Given 2 strings, a and b, return the number of the positions where
+they contain the same length 2 substring. So "xxcaazz" and "xxbaaz" yields 3,
+since the "xx", "aa", and "az" substrings appear in the same place in both strings.
+"""
+"""Helper that returns every n-length substring"""
+def string_match(a, b):
+    count = 0
+    min_str = min(len(a), len(b))
+
+    for i in range(0, min_str-1):
+        if a[i] == b[i] and a[i+1] == b[i+1]:
+            count += 1
+    return count
