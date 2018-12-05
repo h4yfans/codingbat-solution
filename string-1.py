@@ -52,3 +52,10 @@ Given a string of even length, return the first half. So the string "WooHoo" yie
 def first_half(str):
     return str[:len(str)/2]
 
+
+"""
+Given a string, return a version without the first and last char,
+so "Hello" yields "ell". The string length will be at least 2.
+"""
+def without_end(str):
+    return str[1:-1]
