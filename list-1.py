@@ -65,3 +65,10 @@ If the array length is less than 2, just sum up the elements that exist, returni
 """
 def sum2(nums):
     return sum(nums) if len(nums) < 3 else nums[0] + nums[1]
+
+
+"""
+Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
+"""
+def middle_way(a, b):
+    return [a[1],b[1]]
