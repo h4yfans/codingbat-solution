@@ -26,9 +26,21 @@ are multiple copies of the smallest value, ignore just one copy, and likewise fo
 largest value. Use int division to produce the final average.
 You may assume that the array is length 3 or more.
 """
-
-
 def centered_average(nums):
     nums.sort()
 
     return sum(nums[1:-1]) / (len(nums) - 2)
+
+
+"""
+Return the sum of the numbers in the array, returning 0 for an empty array.
+Except the number 13 is very unlucky, so it does not count and numbers that
+come immediately after a 13 also do not count.
+"""
+def sum13(nums):
+    while 13 in nums:
+        if nums.index(13) < len(nums)-1:
+            nums.pop(nums.index(13))
+        nums.pop(nums.index(13)+1)
+
+    return sum(nums)
