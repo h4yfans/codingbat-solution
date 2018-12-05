@@ -26,6 +26,8 @@ are multiple copies of the smallest value, ignore just one copy, and likewise fo
 largest value. Use int division to produce the final average.
 You may assume that the array is length 3 or more.
 """
+
+
 def centered_average(nums):
     nums.sort()
 
