@@ -44,3 +44,11 @@ yields "X", and the empty string "" yields the empty string "".
 """
 def first_two(str):
     return str[:2] if len(str) > 2 else str
+
+
+"""
+Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
+"""
+def first_half(str):
+    return str[:len(str)/2]
+
