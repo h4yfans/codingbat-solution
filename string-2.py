@@ -20,3 +20,17 @@ Return True if the string "cat" and "dog" appear the same number of times in the
 """
 def cat_dog(str):
     return str.count('cat') == str.count('dog')
+
+
+"""
+Return the number of times that the string "code" appears anywhere in the given string,
+except we'll accept any letter for the 'd', so "cope" and "cooe" count.
+"""
+def count_code(str):
+    count_code = str.count('code')
+    count_d = 0
+    for i in range(0,len(str)-2):
+        if str[i:i+2] == 'co' and str [i+2] != 'd' and str[i+3] == 'e':
+            count_d += 1
+    return count_code + count_d
+
