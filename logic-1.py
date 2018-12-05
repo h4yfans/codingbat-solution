@@ -92,3 +92,10 @@ def in1to10(n, outside_mode):
     return (n in range(1,11)) ^ outside_mode
 
 
+"""
+Given a non-negative number "num", return True if num is within 2 of a multiple of 10.
+Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2.
+"""
+def near_ten(num):
+    within = num % ((num/10)*10) if num >= 10 else num
+    return within in [8,9,0,1,2]
