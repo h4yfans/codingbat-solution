@@ -67,3 +67,13 @@ def sum67(nums):
 
     return sum
 
+
+"""
+Given an array of ints, return True if the array contains a 2 next to a 2 somewhere.
+"""
+def has22(nums):
+    for k,v in enumerate(nums[:-1]):
+        if v == 2 and nums[k+1] == 2:
+            return True
+
+    return False
