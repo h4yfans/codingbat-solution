@@ -68,3 +68,11 @@ The strings will not be the same length, but they may be empty (length 0).
 """
 def combo_string(a, b):
     return b+a+b if len(b) < len(a) else a+b+a
+
+
+"""
+Given 2 strings, return their concatenation,except omit the first char of each.
+The strings will be at least length 1.
+"""
+def non_start(a, b):
+    return a[1:] + b[1:]
