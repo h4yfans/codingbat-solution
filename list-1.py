@@ -27,3 +27,10 @@ Both arrays will be length 1 or more.
 """
 def common_end(a, b):
     return a[0] == b[0] or a[-1] == b[-1]
+
+
+"""
+Given an array of ints length 3, return the sum of all the elements.
+"""
+def sum3(nums):
+    return sum(nums)
