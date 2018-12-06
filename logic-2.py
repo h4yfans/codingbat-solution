@@ -60,3 +60,19 @@ def round_sum(a, b, c):
     def round10(num):
         return (num+5)/10*10
     return round10(a)+round10(b)+round10(c)
+
+
+"""
+Given three ints, a b c, return True if one of b or c is "close" (differing from a by at most 1),
+while the other is "far", differing from both other values by 2 or more.
+Note: abs(num) computes the absolute value of a number.
+"""
+def close_far(a, b, c):
+    a_b_diff = abs(a - b)
+    a_c_diff = abs(a - c)
+    b_c_diff = abs(b - c)
+
+    return (
+        (a_b_diff <= 1 and a_c_diff >= 2 and b_c_diff >= 2) !=
+        (a_c_diff <= 1 and a_b_diff >= 2 and b_c_diff >= 2)
+        )
